@@ -1,0 +1,49 @@
+type Link<T> = Option<Box<Node<T>>>;
+
+struct Node<T> {
+    key: T,
+    left: Link<T>,
+    right: Link<T>,
+}
+
+impl<T> Node<T> {
+    fn new_link(key: T) -> Link<T> {
+        unimplemented!()
+    }
+}
+
+pub struct Tree<T> {
+    root: Link<T>,
+}
+
+impl<T: Ord> Tree<T> {
+    /// Creates an empty tree
+    pub fn new() -> Self {
+        unimplemented!()
+    }
+
+    /// Returns `false` if `key` already exists in the tree, and `true` otherwise.
+    pub fn insert(&mut self, key: T) -> bool {
+        unimplemented!()
+    }
+
+    /// Returns `true` if `key` exists in the tree, and `false` otherwise.
+    pub fn find(&self, key: T) -> bool {
+        unimplemented!()
+    }
+
+    /// Returns the preorder traversal of the tree.
+    pub fn preorder(&self) -> Vec<T> {
+        unimplemented!()
+    }
+
+    /// Returns the inorder traversal of the tree.
+    pub fn inorder(&self) -> Vec<T> {
+        unimplemented!()
+    }
+
+    /// Returns the postorder traversal of the tree.
+    pub fn postorder(&self) -> Vec<T> {
+        unimplemented!()
+    }
+}
