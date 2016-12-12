@@ -1,6 +1,3 @@
-/*use std::cmp::Ordering;
-use std::cmp::Ordering::{Less,Equal,Greater};*/
-
 type Link<T> = Option<Box<Node<T>>>;
 #[derive(Debug)]
 struct Node<T> {
@@ -271,8 +268,7 @@ impl<'a, T:Ord> Iterator for IterPostorder<'a, T> {
                     },
                     None => {requirement = true;},
                 }
-                if /*(temp.right.is_none()) | ((self.pre.is_some()) & (self.pre.unwrap().key == temp.right.unwrap().key)) */
-                requirement {
+                if requirement {
                     self.pre = cur;
                     return Some(&self.pre.unwrap().key);
                 } else {
