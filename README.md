@@ -1,1 +1,1 @@
-This is an Rust-lang practice repo.
+This is a Rust-lang practice repo.
